@@ -6,7 +6,7 @@ export default class TodoList extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className='listTodo'>
 				<ul>
 					{this.props.todos.map((todo) => {
 						return <li key={todo.id}>

@@ -14,7 +14,7 @@ export default class App extends Component {
       { label: "Have a lanch", important: false, id: 3, done: false },
     ],
     searchText: "",
-    filter: "All",	
+    filter: "All",
   };
 
   onDeleted = (id) => {
@@ -83,10 +83,10 @@ export default class App extends Component {
 
   filterTodos = (arr, filter) => {
     if (filter === "All") {
-			return arr;
-		}else if (filter === "Done") {
+      return arr;
+    } else if (filter === "Done") {
       return arr.filter((item) => item.done);
-    }else if (filter === "Active") {
+    } else if (filter === "Active") {
       return arr.filter((item) => !item.done);
     }
   };
@@ -97,14 +97,16 @@ export default class App extends Component {
       this.state.searchText
     );
 
-		const filterItems = this.filterTodos(visibleItems, this.state.filter);
-	
+    const filterItems = this.filterTodos(visibleItems, this.state.filter);
 
     return (
       <div className="App">
         <AppHeader />
-        <SearchPanel todos={this.state.todos} searchNote={this.searchNote} />
-        <FilterPanel filterNotes={this.filterNotes} />
+        <div className="searchform">
+          <SearchPanel todos={this.state.todos} searchNote={this.searchNote} />
+          <FilterPanel filterNotes={this.filterNotes} />
+        </div>
+
         <TodoList
           todos={filterItems}
           onDeleted={this.onDeleted}

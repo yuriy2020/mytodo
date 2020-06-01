@@ -1,14 +1,37 @@
 .App {
 	width: 800px;
 	margin: 0 auto;
+	background-color: rgb(245, 245, 245);
+	border-radius: 10px;
+	align-items: center;
 }
+.searchform{
+	margin: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.searchform input{
+	width: 200%;
+	height: 25px;
+	border-radius: 3px;
+	border-color: aliceblue;
+}
+input {outline:none;}
 
+
+.searchform button{
+	padding: 3px;
+	margin: 0 2px;
+	cursor: pointer;
+}
 .important{
 	color: tomato
 }
 
 ul{
 	font-size: larger;
+	list-style-type: none;
 }
 
 ul>li{
@@ -32,7 +55,5 @@ ul>li{
 	background-color: tomato
 }
 button{
-	padding: 6px;
-	margin: 0 5px;
-	cursor: pointer;
+
 }
