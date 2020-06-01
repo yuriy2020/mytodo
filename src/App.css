@@ -1,0 +1,38 @@
+.App {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.important{
+	color: tomato
+}
+
+ul{
+	font-size: larger;
+}
+
+ul>li{
+	margin: 20px 0;
+	cursor: pointer;
+}
+
+.done{
+	text-decoration: line-through;
+}
+
+.important{
+	font-weight: bold;
+	color:steelblue
+}
+
+.mark{
+	background-color: green;
+}
+.del{
+	background-color: tomato
+}
+button{
+	padding: 6px;
+	margin: 0 5px;
+	cursor: pointer;
+}
